@@ -1,38 +1,99 @@
+header.header-container{
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    position: relative;
+}
+
+header.header-container .nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
+.header-container .nav-wrapper a.logo{
+  flex: 1;
+}
+
+.header-container .nav-wrapper ul.nav-menu{
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.header-container .nav-wrapper ul.nav-menu li a{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header-container .nav-wrapper ul.nav-menu li:first-of-type > a{
+  margin-right: 1rem;
+}
+
+.header-container .nav-wrapper .auth-container{
+  flex: 6;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: 0 .4rem;
+
+}
+
+.header-container .nav-wrapper .auth-container .auth-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .4rem;
+  align-items: center;
+}
+
+.nav-wrapper .auth-container .auth-content button:first-of-type{
+  background-color: #ffff;
+  color: #a99a9a;
+  border: 1px solid #ebebeb;
+}
+
+.nav-wrapper button:last-of-type{
+  background-color: #ffff;
+  color:#a99a9a;
+}
+
+button.dropdown-button {
+  display: flex;
+  gap: 0.4rem;
+}
 
 
+.header-container .dropdown-wrapper{
+  position: relative;
+}
 
-
-
-
-
-/* Dropdown content (hidden by default) */
-.dropdown-language{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.header-container .dropdown-wrapper  .dropdown-language{
+  display: none;
+  position: absolute;
+    background-color: #f9f9f9; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  right: 0;
+  top: 100%;
+  border-radius: 8px;
+  z-index: 1;
   }
+
+
   
-  /* Links inside the dropdown */
   .dropdown-language a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    color: #777;
+    padding: .5rem 1rem;
     display: block;
     text-align: left;
   }
-  
-  /* Add a grey background color to dropdown links on hover */
   .dropdown-language a:hover {
     background-color: #ddd;
   }
   
-  /* Show the dropdown menu on hover */
-  .dropdown-wrapper:hover .dropdown-language {
-    display: block;
-  }
+    
+    .dropdown-wrapper:hover .dropdown-language {
+      display: block;
+    }

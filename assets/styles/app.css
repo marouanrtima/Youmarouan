@@ -1,7 +1,7 @@
 
 :root{
     --main-font: 'Inter', sans-serif;
-    --main-color: #19c8fa;
+    --main-color: #b83375;
 }
 
 *{
@@ -29,6 +29,26 @@ ul{
 
 a{
     text-decoration: none;
+    color: #333;
+}
+
+button ,a{
+    display: block;
+    cursor: pointer;
+}
+
+button ,
+.button{
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0.81rem 1.62rem;
+    text-align: center;
+    width: 100%;
 }
 
 .container{
@@ -61,16 +81,7 @@ a{
     } 
 }
 
-.header-container{
-    padding-top: 1rem;
-    position: relative;
-}
 
-.header-container nav.nav-wrapper{
-    display: grid;
-    
-    align-items: center;
-}
 
 
 
