@@ -16,10 +16,31 @@ header.header-container .nav-wrapper{
   flex: 1;
 }
 
+.header-container .nav-wrapper a.logo + .toggle-menu{
+  font-size: 1.50rem;
+}
+
+.header-container .nav-wrapper a.logo + .toggle-menu:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 992px){
+  .header-container .nav-wrapper a.logo + .toggle-menu{
+    display: none;
+  }
+
+}
+
 .header-container .nav-wrapper ul.nav-menu{
   flex: 2;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 992px){
+  .header-container .nav-wrapper ul.nav-menu{
+    display: none;
+  }
 }
 
 .header-container .nav-wrapper ul.nav-menu li a{
@@ -38,7 +59,12 @@ header.header-container .nav-wrapper{
   align-items: center;
   grid-template-columns: auto auto;
   gap: 0 .4rem;
+}
 
+@media (max-width : 992px){
+  .header-container .nav-wrapper .auth-container{
+    display: none;
+  }
 }
 
 .header-container .nav-wrapper .auth-container .auth-content{
@@ -95,5 +121,18 @@ button.dropdown-button {
   
     
     .dropdown-wrapper:hover .dropdown-language {
+      display: block;
+    }
+
+    .wrapper_side_bar{
+      background-color: #ddd;
+      width: 300px;
+      height: 100vh;
+      z-index: 1000;
+      position: absolute;
+      top: 0;
+      display: none;
+    }
+    .side-bar{
       display: block;
     }
