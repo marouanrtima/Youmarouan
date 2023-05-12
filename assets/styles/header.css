@@ -98,7 +98,7 @@ button.dropdown-button {
 .header-container .dropdown-wrapper  .dropdown-language{
   display: none;
   position: absolute;
-    background-color: #f9f9f9; 
+  background-color: #f9f9f9; 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   width: 100%;
   right: 0;
@@ -115,24 +115,111 @@ button.dropdown-button {
     display: block;
     text-align: left;
   }
+
   .dropdown-language a:hover {
     background-color: #ddd;
   }
   
     
-    .dropdown-wrapper:hover .dropdown-language {
+  .dropdown-wrapper:hover .dropdown-language {
       display: block;
     }
 
-    .wrapper_side_bar{
-      background-color: #ddd;
+    
+  .wrapper_side_bar{
+      background-color: #fff;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       width: 300px;
-      height: 100vh;
+      height: 100%;
       z-index: 1000;
-      position: absolute;
+      position: fixed;
+      z-index: 100;
       top: 0;
       display: none;
     }
     .side-bar{
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
+
+    .wrapper_side_bar > a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.50rem;
+    }
+
+
+    .wrapper_side_bar > a i{
+      font-size: 20px;
+    }
+
+    .wrapper_side_bar .dropdown-slider{
+        gap: 1rem;
+        display: grid;
+        margin-top: 2rem;
+    }
+
+    .wrapper_side_bar .dropdown-slider > div.title{
+      color: #777;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .wrapper_side_bar .dropdown-slider .dropdown-language-slider{
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 1rem;
+    }
+
+    .wrapper_side_bar > a{
+      padding: 0 1rem;
+    }
+
+    .wrapper_side_bar .dropdown-slider .dropdown-language-slider,
+    .wrapper_side_bar .auth-content{
+      padding:  1rem;
+    }
+
+
+    .wrapper_side_bar .dropdown-slider .dropdown-language-slider button{
+      font-size: 1rem;
+      padding: .4rem;
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    .wrapper_side_bar ul.nav-menu{
+      text-align: center;
+      display: grid; 
+      color: #333;
+    }
+
+    .wrapper_side_bar ul.nav-menu li a{
+      padding: 1.38rem 0;
+      color: #333;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .wrapper_side_bar ul.nav-menu li:first-child > a{
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    .wrapper_side_bar .auth-content{
+      display: grid;
+      gap: 1rem;
+      font-size: 1rem;
+    }
+
+    .wrapper_side_bar .auth-content button{
+      padding: .7rem 0;
+    }
+
+    .wrapper_side_bar .auth-content button:last-child{
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+
