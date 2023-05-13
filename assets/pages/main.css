@@ -4,3 +4,39 @@
 @import "/assets/styles/footer.css";
 @import "/assets/styles/app.css";
 /* start landing page */
+
+section.section-heading-container{
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 0.75rem;
+}
+
+section.section-heading-container .content-heading {
+    display: grid;
+    gap: 1rem;
+    align-items: space-between;
+
+}
+
+section.section-heading-container .content-heading .inner-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+section.section-heading-container .content-heading i{
+    border: 1px solid #379b16;
+    background-color: #d7ebd0;
+    font-size: 15px;
+    color: #379b16;
+    padding: .2rem;
+    border-radius: 50%;
+}
+
+
+section.section-heading-container .content-heading .heading{
+    width: 400px;
+}
+

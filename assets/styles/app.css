@@ -2,6 +2,7 @@
 :root{
     --main-font: 'Inter', sans-serif;
     --main-color: #b83375;
+    --padding: 6.25rem 0;
 }
 
 *{
@@ -23,6 +24,7 @@ body{
 }
 
 
+
 ul{
     list-style: none;
 }
@@ -31,6 +33,7 @@ a{
     text-decoration: none;
     color: #333;
 }
+
 
 button ,a{
     display: block;
@@ -51,10 +54,15 @@ button ,
     width: 100%;
 }
 
+img{
+    width: 100%;
+}
+
 .container{
     padding: 0 1rem;
     margin: 0 auto;
 }
+
 
 /* SmalL */
 

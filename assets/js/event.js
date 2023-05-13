@@ -12,3 +12,5 @@ xmark.addEventListener("click", (eo) => {
     eo.preventDefault();
     wrapperContainer.classList.remove("side-bar");
 })
+
+
