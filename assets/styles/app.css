@@ -33,7 +33,10 @@ ul{
 a{
     text-decoration: none;
     color: #333;
+    
 }
+
+
 
 
 button ,a{
@@ -53,6 +56,15 @@ button ,
     padding: 0.81rem 1.62rem;
     text-align: center;
     width: 100%;
+}
+
+.learn-more{
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    color: #333;
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
 }
 
 
