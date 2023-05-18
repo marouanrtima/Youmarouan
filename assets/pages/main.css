@@ -553,6 +553,61 @@ section.tools-container .content-tools p{
 
 /* end section tools-container  */
 
+/* start section random-question-container  */
 
+
+section.random-question-container{
+    background-color: #fafafa;
+    border-radius: 16px;
+    padding: 40px 60px 60px;
+    display: grid;
+    gap: 2rem;
+}
+
+section.random-question-container h3{
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+section.random-question-container .inner-question{
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.04);
+    margin-bottom: 16px;
+    padding: 1.2rem .9rem;
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.15rem 0;
+}
+
+section.random-question-container .inner-question h4{
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+section.random-question-container .inner-question i + p{
+    font-size: 14px; 
+    line-height: 1.8;
+    opacity: .8;
+    padding-bottom: 8px;
+    display: none;
+}
+
+section.random-question-container .inner-question span{
+    color: #b83375;
+}
+
+
+.inner-question p.content.show-content{
+    display: block!important;
+}
+/* end section random-question-container  */
 
 
