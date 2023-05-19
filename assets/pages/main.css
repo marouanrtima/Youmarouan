@@ -558,8 +558,8 @@ section.tools-container .content-tools p{
 
 section.random-question-container{
     background-color: #fafafa;
-    border-radius: 16px;
-    padding: 40px 60px 60px;
+    border-radius: 1rem;
+    padding:  2.5rem 3.75rem;
     display: grid;
     gap: 2rem;
 }
@@ -567,9 +567,9 @@ section.random-question-container{
 section.random-question-container h3{
     text-align: center;
     color: #333;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 2;
 }
 
 section.random-question-container .inner-question{
@@ -577,8 +577,8 @@ section.random-question-container .inner-question{
     border: 1px solid #ebebeb;
     border-radius: 8px;
     box-shadow: 0 4px 4px rgba(0,0,0,.04);
-    margin-bottom: 16px;
-    padding: 1.2rem .9rem;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1rem;
     align-items: center;
     cursor: pointer;
     display: grid;
@@ -588,12 +588,12 @@ section.random-question-container .inner-question{
 
 section.random-question-container .inner-question h4{
     color: #333;
-    font-size: 15px;
+    font-size: .9rem;
     font-weight: 500;
 }
 
-section.random-question-container .inner-question i + p{
-    font-size: 14px; 
+.random-questions .inner-question i + p{
+    font-size: .8rem; 
     line-height: 1.8;
     opacity: .8;
     padding-bottom: 8px;
@@ -605,9 +605,53 @@ section.random-question-container .inner-question span{
 }
 
 
-.inner-question p.content.show-content{
+.random-questions .inner-question  p.content.show-content{
     display: block!important;
+    transition: .7s;
 }
 /* end section random-question-container  */
+
+/* start footer-container */
+
+.footer-container{
+    margin-top: var(--margin-top);
+    background-color: #333;
+    padding: 2.5rem 0;
+}
+
+.footer-container .navigation{
+    border: 1px solid red;
+    padding: 0 6.25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+
+.footer-container .navigation .list-navigation p{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.footer-container .navigation .list-navigation ul{
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-container .navigation .list-navigation a{
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer-container .navigation .list-navigation a:hover{
+    text-decoration: underline;
+    transition: .3s;
+}
+
+/* end footer-container */
 
 
