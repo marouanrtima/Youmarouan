@@ -13,13 +13,31 @@ xMark.addEventListener("click", (eo) => {
   wrapperContainer.classList.remove("side-bar");
 });
 
-// const randomQuestions = document.getElementById("random-questions");
-// const innerQuestion = document.querySelector("inner-question");
-// randomQuestions.addEventListener("click", (eo) => {
+const randomShow = document.getElementById("random-questions");
+
+const innerQuestion = document.querySelectorAll(".inner-question");
+
+const contentShow = document.querySelectorAll(".content");
+
+Array.from(innerQuestion);
+
+Array.from(contentShow);
+console.log(innerQuestion);
+
+//  first solution her perfermanc not good
+
+// randomShow.addEventListener("click", (eo) => {
 //   if (eo.target.classList == "inner-question") {
-//     eo.target.style.border = "5px solid red";
 //     eo.target
 //       .getElementsByClassName("content")[0]
 //       .classList.toggle("show-content");
 //   }
 // });
+
+// best solution today
+
+innerQuestion.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("show-content");
+  });
+});

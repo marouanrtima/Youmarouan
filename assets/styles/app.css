@@ -73,7 +73,9 @@ button ,
     margin: 0 auto;
 }
 
-
+body * {
+    /* border: 5px solid green; */
+}
 
 /* SmalL */
 
