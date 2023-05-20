@@ -30,10 +30,10 @@ innerQuestion.forEach((item) => {
   });
 });
 
+
+
+// for scroll bar
 const headerContainer = document.querySelector(".header-container");
-
-document.addEventListener("scroll", (eo) => {});
-
 window.addEventListener("scroll", (eo) => {
   let scrollTop = document.documentElement.scrollTop;
   if (scrollTop === 0) {

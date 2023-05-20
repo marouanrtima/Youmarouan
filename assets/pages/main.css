@@ -578,7 +578,7 @@ section.random-question-container .inner-question span {
 }
 
 .inner-question i {
-  transition: all 0.3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .random-questions .inner-question.show-content p.content {

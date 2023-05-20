@@ -95,9 +95,6 @@
 
 .wrapper-container .social-media .icon-media{
     background-color: #505050;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     color: #b9b9b9;
     height: 2rem;
     width: 2rem;
@@ -107,6 +104,12 @@
     margin-left: .5rem;
     cursor: pointer;
     transition: .3s;
+}
+
+.wrapper-container .social-media .links-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width : 1000px){
