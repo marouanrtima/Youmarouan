@@ -13,17 +13,10 @@ xMark.addEventListener("click", (eo) => {
   wrapperContainer.classList.remove("side-bar");
 });
 
-const randomShow = document.getElementById("random-questions");
+// const randomShow = document.getElementById("random-questions");
 
 const innerQuestion = document.querySelectorAll(".inner-question");
-
-const contentShow = document.querySelectorAll(".content");
-
 Array.from(innerQuestion);
-
-Array.from(contentShow);
-console.log(innerQuestion);
-
 innerQuestion.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("show-content");
@@ -33,6 +26,7 @@ innerQuestion.forEach((item) => {
 
 
 // for scroll bar
+
 const headerContainer = document.querySelector(".header-container");
 window.addEventListener("scroll", (eo) => {
   let scrollTop = document.documentElement.scrollTop;

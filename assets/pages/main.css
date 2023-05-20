@@ -461,7 +461,8 @@ section.tools-container {
 @media (max-width: 997px) {
   section.tools-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
+    justify-content: center;
   }
 }
 

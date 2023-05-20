@@ -94,7 +94,7 @@
 }
 
 .wrapper-container .social-media .icon-media{
-    background-color: #505050;
+    background-color: #505050; 
     color: #b9b9b9;
     height: 2rem;
     width: 2rem;
@@ -108,8 +108,8 @@
 
 .wrapper-container .social-media .links-media {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 @media (max-width : 1000px){
