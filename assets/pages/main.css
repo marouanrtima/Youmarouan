@@ -97,6 +97,7 @@ section.section-heading-container .content-heading {
   height: fit-content;
 }
 
+
 @media (max-width: 845px) {
   .section-heading-container .content-heading .button {
     margin: auto;
@@ -382,6 +383,12 @@ section.charge-container .chart-charge {
   gap: 2rem;
 }
 
+@media (max-width: 767px) {
+  section.charge-container .chart-charge {
+    flex-direction: column-reverse;
+  }
+}
+
 section.charge-container .chart-charge .inner-chart {
   background-color: #fff;
   border: 1px solid #ebebeb;
@@ -549,6 +556,13 @@ section.random-question-container .inner-question h4 {
   color: #333;
   font-size: 0.9rem;
   font-weight: 500;
+}
+
+
+@media (max-width :767px){
+  section.random-question-container .inner-question h4 {
+    margin-right: 30px;
+  }
 }
 
 .random-questions .inner-question i + p {

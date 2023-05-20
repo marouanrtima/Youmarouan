@@ -24,20 +24,21 @@ Array.from(innerQuestion);
 Array.from(contentShow);
 console.log(innerQuestion);
 
-//  first solution her perfermanc not good
-
-// randomShow.addEventListener("click", (eo) => {
-//   if (eo.target.classList == "inner-question") {
-//     eo.target
-//       .getElementsByClassName("content")[0]
-//       .classList.toggle("show-content");
-//   }
-// });
-
-// best solution today
-
 innerQuestion.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("show-content");
   });
+});
+
+const headerContainer = document.querySelector(".header-container");
+
+document.addEventListener("scroll", (eo) => {});
+
+window.addEventListener("scroll", (eo) => {
+  let scrollTop = document.documentElement.scrollTop;
+  if (scrollTop === 0) {
+    headerContainer.classList.remove("scroll")
+  } else if (scrollTop >= 0) {
+    headerContainer.classList.add("scroll")
+  }
 });
