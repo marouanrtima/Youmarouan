@@ -329,7 +329,7 @@ section.charge-container .container {
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   align-items: center;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 @media (max-width: 768px) {

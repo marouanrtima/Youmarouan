@@ -32,7 +32,9 @@ window.addEventListener("scroll", (eo) => {
   let scrollTop = document.documentElement.scrollTop;
   if (scrollTop === 0) {
     headerContainer.classList.remove("scroll")
+    // console.log("close");
   } else if (scrollTop >= 0) {
     headerContainer.classList.add("scroll")
+    // console.log("done");
   }
 });
