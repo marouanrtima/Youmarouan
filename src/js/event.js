@@ -1,9 +1,8 @@
 const dropdownLanguage = document.querySelector(".dropdown-wrapper");
-console.log(dropdownLanguage);
 
+// for dropdown -language
 dropdownLanguage.addEventListener("click", (eo) => {
-  console.log("done");
-  eo.target.classList.toggle("show-dropdown");
+eo.target.classList.toggle("show-dropdown");
 });
 
 const toggleMenu = document.getElementsByClassName("toggle-menu")[0];
@@ -22,17 +21,17 @@ xMark.addEventListener("click", (eo) => {
 });
 
 // for scroll bar
-const headerContainer = document.querySelector(".header-container");
-window.addEventListener("scroll", (eo) => {
-  let scrollTop = document.documentElement.scrollTop;
-  if (scrollTop === 0) {
-    headerContainer.classList.remove("scroll");
-    // console.log("close");
-  } else if (scrollTop >= 0) {
-    headerContainer.classList.add("scroll");
-    // console.log("done");
-  }
-});
+// const headerContainer = document.querySelector(".header-container");
+// window.addEventListener("scroll", (eo) => {
+//   let scrollTop = document.documentElement.scrollTop;
+//   if (scrollTop === 0) {
+//     headerContainer.classList.remove("scroll");
+//     // console.log("close");
+//   } else if (scrollTop >= 0) {
+//     headerContainer.classList.add("scroll");
+//     // console.log("done");
+//   }
+// });
 
 // const randomShow = document.getElementById("random-questions");
 
