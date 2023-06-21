@@ -21,17 +21,17 @@ xMark.addEventListener("click", (eo) => {
 });
 
 // for scroll bar
-const headerContainer = document.querySelector(".header-container");
-window.addEventListener("scroll", (eo) => {
-  let scrollTop = document.documentElement.scrollTop;
-  if (scrollTop === 0) {
-    headerContainer.classList.remove("scroll");
-    // console.log("close");
-  } else if (scrollTop >= 0) {
-    headerContainer.classList.add("scroll");
-    // console.log("done");
-  }
-});
+// const headerContainer = document.querySelector(".header-container");
+// window.addEventListener("scroll", (eo) => {
+//   let scrollTop = document.documentElement.scrollTop;
+//   if (scrollTop === 0) {
+//     headerContainer.classList.remove("scroll");
+//     // console.log("close");
+//   } else if (scrollTop >= 0) {
+//     headerContainer.classList.add("scroll");
+//     // console.log("done");
+//   }
+// });
 
 // const randomShow = document.getElementById("random-questions");
 
